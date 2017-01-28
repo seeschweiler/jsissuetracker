@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Issue Tracker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchIssues()">
+    <div class="container">
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong><a href="http://codingthesmartway.com/courses/complete-javascript/" target="_blank">[ONLINE COURSE] - The Complete JavaScript Course: Build a Real-World Project</a></strong> +++ Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6 +++ You will gain a deep and true understanding of how JavaScript works behind the scenes. +++
+      </div>
+      <h1>JS IssueTracker <small>by CodingTheSmartWay.com</small></h1>
+      <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescInput">Description</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
+          </div>
+          <div class="form-group">
+            <label for="issueSeverityInput">Severity</label>
+            <select id="issueSeverityInput" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="issueAssignedToInput">Assigned To</label>
+            <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col-lg-12">
+        <div id="issuesList">
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy <a href="http://codingthesmartway.com" target="_blank">CodingTheSmartWay.com</a> | <a href="http://codingthesmartway.com/imprint" target="_blank">Imprint</a></p>
+      </div>
+    </div>
+    <script src="chance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
